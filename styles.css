@@ -1,0 +1,264 @@
+/* -----------Global Style use for all element---------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+  color: white;
+}
+
+body {
+  background-color: rgb(29, 29, 29);
+}
+
+/* --------------------header----------- */
+
+header {
+  text-align: center;
+  font-size: 36px;
+}
+
+header h1 {
+  padding: 20px 0;
+  width: 100%;
+}
+
+.warp-to-section {
+  width: 100%;
+  display: flex;
+  font-size: 18px;
+  justify-content: space-around;
+  background-color: red;
+  padding: 20px;
+}
+
+.warp-container {
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.warp-container a {
+  text-decoration: none;
+}
+
+/* -----------name-logo------------------- */
+
+.name-logo-present {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(203, 200, 200);
+}
+
+.name-logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 400px 0;
+}
+
+.name-logo-container img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.name-logo-container h2 {
+  margin-bottom: 10px;
+}
+
+/* ----------------mission--------------- */
+
+#mission {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(./img/pexels-lucian-pirvu-4176427.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#mission h2 {
+  text-align: center;
+  padding-top: 20px;
+}
+.mission-container {
+  padding: 300px 100px;
+  text-align: center;
+}
+
+.mission-container h3 {
+  margin-bottom: 10px;
+}
+
+/* ------------product-------------------- */
+#product {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(42, 40, 40);
+}
+
+.product-text {
+  margin: 30px auto 5px auto;
+}
+
+.slider-container {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  margin: 10px 0 40px 0;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  animation: 30s cubic-bezier(1, 0.95, 0.565, 1) sliding infinite;
+}
+
+.slide-product {
+  position: relative;
+  min-width: 100%;
+  height: 100%;
+}
+
+.slide-product img {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes sliding {
+  0% {
+    transform: translateX(0%);
+  }
+  20% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  45% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  70% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-300%);
+  }
+  95% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(-400%);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .slider {
+    flex-shrink: 1;
+  }
+}
+
+/* -------employee------------------- */
+
+#employees {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(./img/pexels-adriette-benade-6366897.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.member-group {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.profile-container {
+  width: 100%;
+  height: 100%;
+}
+
+.profile-container img {
+  width: 300px;
+  height: 400px;
+}
+
+.profile-container h3 {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.member-role {
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .profile-container {
+    flex-shrink: 1;
+    width: 100px;
+  }
+
+  .profile-container img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .profile-container h3 {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .member-role {
+    font-size: 12px;
+  }
+}
+
+/* -------footer ---------------- */
+
+footer {
+  /* background-color: rgb(42, 40, 40); */
+  background-color: red;
+  width: 100%;
+}
+
+.contact {
+  text-align: center;
+  padding: 40px;
+  font-weight: bold;
+}
+
+.contact h2 {
+  font-size: 30px;
+}
+
+.contact-show {
+  font-size: 18px;
+  padding: 40px 0;
+}
+
+.contact-show a {
+  text-decoration: none;
+}
+
+.contact-show p {
+  margin-top: 20px;
+}
